@@ -68,14 +68,14 @@ public class BaseTest {
             throw new Exception("check browser variable");
         }
     }
-/**
+
     @After
     public void testDown(){
         webDriver.quit();
         logger.info("Browser is closed");
         logger.info("test ended");
     }
-*/
+
 
 
 }
