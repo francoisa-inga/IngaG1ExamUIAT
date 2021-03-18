@@ -17,7 +17,7 @@ public void selectDesiredTour() {
             .clickCountriesListPageHeader();
     countriesListPage.clickSearchButton();
     jordanPage.waitForJordanPageToLoad()
-            .checkIsRedirectedToJordanPage()
+            .checkIfRedirectedToJordanPage()
             .clickFastTourOrderButton();
     jordanPage.checkFastTourOrderFormDisplayed()
               .fillFastTourOrderName("Bill Gates")

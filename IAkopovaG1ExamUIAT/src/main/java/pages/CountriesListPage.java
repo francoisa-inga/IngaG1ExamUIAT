@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import ru.yandex.qatools.htmlelements.element.Button;
 import ru.yandex.qatools.htmlelements.element.TextInput;
 
-public class CountriesListPage extends ParentPage{
+public class CountriesListPage extends ParentPageWithElements {
 
     @FindBy(xpath=".//*[@id='edit-name' and @data-original-title='Название страны/города:']")
     protected TextInput countryInputField;

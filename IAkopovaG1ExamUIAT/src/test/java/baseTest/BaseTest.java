@@ -22,6 +22,10 @@ public class BaseTest {
     protected CountriesListPage countriesListPage;
     protected JordanPage jordanPage;
     protected TravelPage travelPage;
+    protected AllToursPage allToursPage;
+    protected RegistrationConfirmationPage registrationConfirmationPage;
+    protected AgenciesListPage agenciesListPage;
+    protected ToursByInstallmentsPage toursByInstallmentsPage;
 
     @Before
     public void setUo() throws Exception{
@@ -33,10 +37,15 @@ public class BaseTest {
         logger.info("Browser Chrome opened");
 
         // Declaring pages
+
         homePage = new HomePage(webDriver);
         countriesListPage = new CountriesListPage(webDriver);
         travelPage = new TravelPage(webDriver);
         jordanPage = new JordanPage(webDriver);
+        allToursPage = new AllToursPage(webDriver);
+        registrationConfirmationPage = new RegistrationConfirmationPage(webDriver);
+        agenciesListPage = new AgenciesListPage(webDriver);
+        toursByInstallmentsPage = new ToursByInstallmentsPage(webDriver);
 
     }
 
@@ -59,14 +68,14 @@ public class BaseTest {
             throw new Exception("check browser variable");
         }
     }
-
+/**
     @After
     public void testDown(){
         webDriver.quit();
         logger.info("Browser is closed");
         logger.info("test ended");
     }
-
+*/
 
 
 }

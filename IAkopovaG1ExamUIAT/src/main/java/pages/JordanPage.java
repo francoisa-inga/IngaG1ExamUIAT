@@ -7,9 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import java.awt.*;
-
-public class JordanPage extends ParentPage {
+public class JordanPage extends ParentPageWithElements {
 
 
     public JordanPage(WebDriver webDriver) {
@@ -35,7 +33,7 @@ public class JordanPage extends ParentPage {
     }
 
 
-    public JordanPage checkIsRedirectedToJordanPage() {
+    public JordanPage checkIfRedirectedToJordanPage() {
 
         Assert.assertEquals("Invalid Jordan page",
                 baseUrl + getRelativeUrl(),
